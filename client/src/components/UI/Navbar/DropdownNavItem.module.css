@@ -1,0 +1,43 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    text-align: start;
+    position: absolute;
+    list-style: none;
+    border: 1px solid darkgrey;
+    padding: 5px;
+    background: white;
+}
+
+
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .dropdown-menu {
+        left: 42%;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .dropdown-menu {
+        left: 44%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .dropdown-menu {
+        left: 46%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dropdown-menu {
+        left: auto;
+    }
+}

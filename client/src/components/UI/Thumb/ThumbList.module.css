@@ -1,0 +1,11 @@
+.thumbs-container {
+    overflow: hidden;
+    user-select: none;
+    margin: 10px 0;
+}
+
+.thumbs-flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 12px;
+}

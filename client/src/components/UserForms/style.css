@@ -1,0 +1,31 @@
+.user-form {
+    width: 100%;
+}
+.form-btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-btn-container>* {
+    margin-bottom: 5px;
+}
+
+.form-anchor {
+    color: #E74C3C;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-anchor:hover {
+    color: #e67265
+}
+
+@media only screen and (max-width: 375px) {
+    .modal-user-form{
+        min-width: 100px;
+    }
+}
+

@@ -1,0 +1,135 @@
+.orders-table-header{
+    margin-bottom: 20px;
+}
+.orders-table-filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3%;
+    row-gap: 10px;
+}
+
+.orders-table-filters  > *:not(.orders-table-data-filter) {
+    width: 22.75%;
+}
+
+
+.orders-table-data-filter{
+    width: 48.5%;
+    margin: 0;
+}
+
+.orders-table-status{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 12px;
+}
+
+.orders-table-status-change-btn{
+    width: 100%;
+}
+
+.orders-table-pending-status{
+    background: lightgrey;
+    color: #003171;
+    border: 2px solid #003171;
+}
+
+.orders-table-delivered-status{
+    background: #b5d2f8;
+    color: #1e5fb5;
+    border: 2px solid #1e5fb5;
+}
+
+.orders-table-completed-status{
+    background: #d7faed;
+    color: #2FB182;
+    border: 2px solid #2FB182;
+}
+
+.orders-table-refunded-status{
+    background: #ffebc4;
+    color: #FFB20B;
+    border: 2px solid #FFB20B;
+}
+
+.orders-table-cancelled-status{
+    background: #f8cbd6;
+    color: #E15B7B;
+    border: 2px solid #E15B7B;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .orders-table-status-change-btn {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .orders-table-filters  > *:not(.orders-table-data-filter) {
+        width: 48.50%;
+    }
+
+    
+}
+
+/* @media only screen and (max-width: 600px) {
+    .product-table-header {
+        align-items: center;
+    }
+
+    .product-table-filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .product-table-filters>* {
+        width: 100%;
+    }
+
+    .product-table-filters button {
+        width: 120px;
+        align-self: flex-start;
+    }
+} */
+/* 
+@media only screen and (max-width: 768px) {
+    .product-table-header {
+        flex-direction: column;
+        align-items: unset;
+        margin-bottom: 10px;
+    }
+
+} */
+
+
+@media only screen and (min-width: 425px) {
+
+
+
+    .orders-table-status-change-btn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+
+    .orders-table-status-change-btn {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .orders-table-status-change-btn {
+        padding: 9px 11px;
+        font-size: 17px;
+    }
+}

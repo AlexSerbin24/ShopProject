@@ -1,0 +1,39 @@
+.nav-item{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.active{
+    background: #E74C3C;
+}
+
+.active .nav-link{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-item{
+        padding: 12px;
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
+ }
+
+ @media only screen and (min-width: 600px) {
+    .nav-item{
+        padding:22px 10px;
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
+ }

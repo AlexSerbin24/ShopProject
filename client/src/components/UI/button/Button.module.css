@@ -1,0 +1,45 @@
+.shop-btn{
+    border: 0;
+    cursor: pointer;
+    border: 1px solid #E74C3C;
+}
+
+.btn-width-100{
+    width: 100%;
+}
+
+.bg-light-red{
+    background: #E74C3C;
+    color: white;
+}
+
+.bg-light-red:hover{
+    background-color: #f17264;
+}
+
+.bg-outline-light-red{
+    background: white;
+    color: #E74C3C;;
+}
+
+@media only screen and (max-width: 600px) {
+    .shop-btn{
+        padding: 10px 14px;
+        font-size: 16px;
+
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .shop-btn{
+        padding: 9px 12px;
+        font-size: 14px;
+
+    }
+}
+@media only screen and (min-width: 992px){
+    .shop-btn{
+        padding: 10px 14px;
+        font-size: 18px;
+    }
+} 

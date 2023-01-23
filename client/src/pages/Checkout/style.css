@@ -1,0 +1,190 @@
+.checkout-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    width:100%;
+}
+
+.order-information{
+    width: 80%;
+}
+
+
+.customer-form-name{
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    gap: 5%;
+    margin-bottom: 15px;
+
+}
+
+
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid darkgray;
+}
+
+.order-header h3{
+    font-size: 26px;
+}
+
+.order-header * {
+    margin-bottom: 0;
+}
+
+
+.order-features{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.order-features li{
+    border-bottom: 1px solid darkgray;
+    padding: 25px 0;
+}
+
+.order-features-form{
+    display: none;
+}
+
+.order-radio label:has(input[type ="radio"]:checked) + .order-features-form{
+    display: block;
+}
+
+.order-product{
+    display: flex;
+    gap: 9%
+}
+
+.order-product-name{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.order-product-prop{
+    text-align: center;
+    width: 27.3333%;
+}
+.order-product-prop-name{
+    color: gray;
+}
+
+.order-product-prop-name, .order-product-prop-value{
+    font-size: 18px;
+}
+
+.order-product-img-container{
+    width: 100px;
+    height: 100px;
+}
+
+.order-radio{
+    margin-top: 20px;
+}
+
+
+.confirm-checkout{
+    width: 20%;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    height: 300px;
+}
+
+.confirm-checkout h4{
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.confirm-checkout dl{
+    margin-top: 0;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm-checkout dl dt{
+    color: grey;
+}
+
+.confirm-checkout dl dd{
+    color:black
+}
+
+.total-order-price{
+    padding: 10px 0;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgray;
+    
+}
+
+.total-order-price dd{
+    font-size: 23px;
+}
+
+.message{
+    text-align: center;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+    .checkout-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .order-information, .confirm-checkout{
+        width: 90%;
+    }
+
+    .confirm-checkout{
+        padding:4px;
+        order: 1;
+    }
+    .order-information{
+        order: 2;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .order-information{
+        width: 60%;
+    }
+
+    .confirm-checkout{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .order-information{
+        width: 65%;
+    }
+
+    .confirm-checkout{
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .order-information{
+        width: 70%;
+    }
+
+    .confirm-checkout{
+        width: 30%;
+    }
+}

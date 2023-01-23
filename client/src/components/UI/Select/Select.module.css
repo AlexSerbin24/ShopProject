@@ -1,0 +1,8 @@
+.app-select{
+    box-sizing: border-box;
+    border: 0;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 1px solid darkgray;
+    text-transform: capitalize;
+}

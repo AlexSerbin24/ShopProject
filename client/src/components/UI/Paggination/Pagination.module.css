@@ -1,0 +1,9 @@
+.pag-btns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.pag-btns a:not(:first-child)>button{
+    border-left: none;
+}

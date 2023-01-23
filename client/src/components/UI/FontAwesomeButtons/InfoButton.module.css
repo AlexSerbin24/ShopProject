@@ -1,0 +1,8 @@
+.info-button{
+    color: green;
+    cursor: pointer;
+}
+
+.info-button:hover{
+    color: rgb(62, 141, 62);
+}

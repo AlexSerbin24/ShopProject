@@ -1,0 +1,8 @@
+.edit-button {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    color: rgb(94, 170, 246);
+}

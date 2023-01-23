@@ -1,0 +1,82 @@
+.app-table{
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.app-table th{
+    text-align: start;
+    font-weight: bold;
+}
+
+.app-table tr{
+    border-bottom: 1px solid lightgray;
+}
+
+.app-table-container{
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 425px) {
+    .app-table{
+        font-size: 14px;
+    }
+    
+
+    
+    .app-table td, .app-table  th{
+        padding: 5px 9px;
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+    .app-table{
+        font-size: 16px;
+    }
+    
+
+    
+    .app-table td, .app-table  th{
+        padding: 5px 9px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* .app-table{
+        font-size: 17px;
+    }
+    
+
+    
+    .app-table td, .app-table  th{
+        padding: 6px 10px;
+    } */
+}
+
+@media only screen and (min-width: 768px) {
+    .app-table{
+        font-size: 19px;
+    }
+    
+
+    
+    .app-table td, .app-table  th{
+        padding: 8px 12px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .app-table{
+        font-size: 23px;
+    }
+    
+
+    
+
+    .app-table td, .app-table  th{
+        padding: 10px 15px;
+    }
+}

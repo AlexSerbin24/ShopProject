@@ -1,0 +1,11 @@
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    padding: 15px;
+    box-shadow: 0 0 3px;
+    width: 450px;
+}

@@ -1,0 +1,141 @@
+.products{
+    gap:3%;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+.product-card{
+    box-shadow: 0 0 2px;
+    width: 17.6%;
+    height: 100%;
+}
+
+.product-title{
+    text-decoration: none;
+}
+
+.product-card-price-container,.product-rating, .products{
+    display: flex;
+    
+
+}
+
+.product-rating{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product-card-price-container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product-price-in-card{
+    color:#E74C3C;
+    font-weight: bold;
+    font-size: 15.5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .product-card{
+        width: 49%;
+        margin-bottom: 10px;
+    }
+
+    .product-card-price-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .product-price-in-card{
+        font-size: 20px;
+    }
+    
+    .products{
+        gap:2%;
+
+    }
+    
+ }
+
+
+ @media only screen and (min-width: 600px) {
+    .product-card{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    .products{
+        gap:5%;
+
+    }
+
+    .product-price-in-card{
+        font-size: 18px;
+    }
+    
+ }
+
+ 
+ @media only screen and (min-width: 992px) {
+
+    .product-price-in-card{
+        font-size: 19.6px;
+    }
+    
+ }
+
+ @media only screen and (min-width: 1200px) {
+    .product-card{
+        width: 24%;
+        margin-bottom: 10px;
+    }
+    .products{
+        gap:1.33333%;
+
+    }
+
+    .product-price-in-card{
+        font-size: 21px;
+    }
+    
+ }
+
+ @media only screen and (min-width: 1366px) {
+    .product-card{
+        width: 19%;
+    }
+    .products{
+        gap:1.25%;
+
+    }    
+ }
+
+ @media only screen and (max-width: 400px) {
+    .product-rating .back-stars, .product-rating .front-stars {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 400px){
+    .product-rating .back-stars, .product-rating .front-stars  {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .product-rating .back-stars, .product-rating .front-stars  {
+        font-size: 1.45rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .product-rating .back-stars, .product-rating .front-stars  {
+        font-size: 1.6rem;
+    }
+}

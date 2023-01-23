@@ -1,0 +1,19 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.back-stars {
+    display: flex;
+    color: lightgrey;
+    position: relative;
+}
+.front-stars {
+    display: flex;
+    color: #FFBC0B;
+    overflow: hidden;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+}

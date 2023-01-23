@@ -1,0 +1,9 @@
+.app-label{
+    display: block;
+    margin-bottom: 15px;
+}
+.app-label-title{
+    color:grey;
+    font-size: 18px;
+    width: 100%;
+}
