@@ -30,8 +30,8 @@ export default function LoginForm({ redirectToRegister }) {
         }
 
         if (!password) {
-            console.log("Password is not entered:")
-            console.log(password)
+            ("Password is not entered:")
+            (password)
             errors["password"] = "Password is not entered";
         }
 

@@ -32,14 +32,6 @@ class TokenService{
         return tokenData
     }
 
-    getRoleByToken(){
-        try {
-            
-        } catch (error) {
-            
-        }
-    }
-
     validateAccessToken(accessToken){
         try {
             const userData  = jsonwebtoken.verify(accessToken, process.env.JWT_SECRET_KEY);

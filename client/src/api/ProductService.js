@@ -23,7 +23,6 @@ class ProductService {
 
     async addProduct(productData) {
         
-        // let response = await axios.post("http://localhost:5000/products/",productData,{headers: {"Authorization":`Bearer ${localStorage.getItem("token")}` }})
         let response = await api.post("/products/",productData)
         let addedProduct = response.data
         return addedProduct;

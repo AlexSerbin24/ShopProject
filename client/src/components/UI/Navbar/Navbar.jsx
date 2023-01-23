@@ -10,7 +10,6 @@ export default function Navbar({ children }) {
 
   const navbarContainerClasses = [classes["navbar-container"]];
   if(!toggle){
-    console.log("Test");
     navbarContainerClasses.push(classes["collapse"])
   }
   return (

@@ -3,7 +3,7 @@ import Thumb from "./Thumb"
 import Arrows from '../Arrows/Arrows';
 import classes from './ThumbList.module.css'
 export default function ThumbList({ thumbs, currentThumbNumber, setThumb, thumbClassName, ...props }) {
-console.log(thumbs.length)
+(thumbs.length)
     const [arrowsHidden, setArrowsHidden] = useState(false)
     const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
     const thumbContainer = useRef();

@@ -13,7 +13,7 @@ export const useFetching = (callback) => {
             await callback(...params);
             result.isSucceed=true;
         } catch (error) {
-            console.log(error)
+            (error)
             setError(error.response.data)
         }
         finally {

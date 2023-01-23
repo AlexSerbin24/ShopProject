@@ -72,7 +72,7 @@ export default function ProductForm({ editProduct, productAction, loading }) {
 
         let formdata = new FormData();
         let { newImages: images, currentImages, ...productData } = product;
-        console.log(productData.description)
+        (productData.description)
         images.forEach(img => formdata.append("images", img.file));
         formdata.append("product", JSON.stringify(productData));
         formdata.append("currentImages", JSON.stringify(currentImages));

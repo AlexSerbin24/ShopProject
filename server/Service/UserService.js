@@ -10,7 +10,7 @@ import ApiError from "../Exceptions/ApiError.js";
 class UserService {
     async registration(email, password) {
         const checkUser = await User.findOne({ email: email })
-        console.log(checkUser)
+        (checkUser)
         if (checkUser) {
 
             throw  ApiError.BadRequest("User is already exists");

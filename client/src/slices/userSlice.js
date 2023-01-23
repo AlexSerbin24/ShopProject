@@ -7,7 +7,7 @@ export const login = createAsyncThunk("user/login", async (loginData) => {
 
     try {
         const userData = await UserService.login(loginData);
-        console.log(userData)
+        (userData)
         localStorage.setItem("token", userData.accessToken);
         return userData;
     } catch (error) {

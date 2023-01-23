@@ -20,7 +20,7 @@ class OrderController {
 
             return res.send(orders);
         } catch (error) {
-            console.log(error.message)
+            (error.message)
             next(error);
         }
     }
@@ -32,7 +32,7 @@ class OrderController {
             let orders = await Promise.all(orderEntitites.map(orderEntity => new OrderDto(orderEntity)));
             return res.send(orders);
         } catch (error) {
-            console.log(error.message)
+            (error.message)
             next(error)
         }
     }
@@ -43,8 +43,8 @@ class OrderController {
 
             const orderId = req.params.orderId;
             const {status}  = req.body;
-            console.log(req.body);
-            console.log(status);
+            (req.body);
+            (status);
             const user = req.user;
         
             if (status != "refunded" && !user.roles.includes("ADMIN")) {
@@ -58,7 +58,7 @@ class OrderController {
             return res.send(order);
 
         } catch (error) {
-            console.log(error)
+            (error)
             next(error)
         }
 

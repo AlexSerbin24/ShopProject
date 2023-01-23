@@ -31,9 +31,9 @@ app.use(ApiErrorsMiddleware);
 async function startApp() {
     try {
         await mongoose.connect(DB_URL)
-        app.listen(PORT, () => console.log(`app started on app ${PORT}`));
+        app.listen(PORT, () => (`app started on app ${PORT}`));
     } catch (error) {
-        console.log(error.message)
+        (error.message)
     }
 }
 startApp();

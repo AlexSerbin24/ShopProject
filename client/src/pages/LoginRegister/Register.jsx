@@ -5,7 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 export default function Register() {
     const navigate = useNavigate();
 
-    console.log(useLocation())
+    (useLocation())
     return (
         <Container className={"form-page"}>
             <div className={"form-container"}>

@@ -10,7 +10,7 @@ class ProductController {
             let productDto = new ProductDto(createdProduct, 0);
             return res.send(productDto);
         } catch (error) {
-            console.log(error);
+            (error);
             return res.status(500).send({ message: error.message });
         }
     }
